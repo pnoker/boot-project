@@ -1,0 +1,7 @@
+_____.___.________  .___
+\__  |   |\_____  \ |   |
+ /   |   | /   |   \|   |
+ \____   |/    |    \   |
+ / ______|\_______  /___|
+ \/               \/
+${AnsiColor.BRIGHT_YELLOW}Pnoker${AnsiColor.BRIGHT_CYAN} Authors

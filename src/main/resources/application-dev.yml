@@ -1,0 +1,28 @@
+spring:
+  application:
+    name: @project.artifactId@
+  quartz:
+    properties:
+      org.quartz:
+        scheduler:
+          instanceName: EmulatorQuartzScheduler
+          instanceId: AUTO
+        threadPool:
+          threadsInheritContextClassLoaderOfInitializingThread: true
+          class: org.quartz.simpl.SimpleThreadPool
+          threadPriority: 5
+          threadCount: 50
+  data:
+    mongodb:
+      host: localhost
+      port: 27017
+      database: yoi
+      username: yoi
+      password: yoi
+
+logging:
+  level:
+    org.mongodb: INFO
+    org.quartz: INFO
+  file:
+    name: emulator/logs/${spring.application.name}.log
