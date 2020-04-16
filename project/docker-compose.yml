@@ -6,16 +6,16 @@ services:
     build:
       context: ../
       dockerfile: ./Dockerfile
-    image: yoi/emulator:v1
+    image: pnoker/boot-project:v1
     restart: always
-    container_name: yoi-emulator
-    hostname: yoi-emulator
+    container_name: boot-project
+    hostname: boot-project
     networks:
-      yoinet:
+      net:
         aliases:
-          - yoi-emulator
+          - boot-project
 
 networks:
-  yoinet:
+  net:
     driver: 'bridge'
 ...
